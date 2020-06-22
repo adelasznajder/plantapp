@@ -3,14 +3,37 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server --hot -d",
-    "build": "webpack -p"
+    "build": "webpack -p",
+
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
-  }
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "babel-loader": "^8.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0",
+    "sass": "^1.26.8",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adelasznajder/plantapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adelasznajder/plantapp/issues"
+  },
+  "homepage": "https://github.com/adelasznajder/plantapp#readme",
+  "description": ""
 }
+
