@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server --hot -d",
-    "build": "webpack -p",
-
+    "build": "webpack -p"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -22,7 +22,10 @@
     "defaults"
   ],
   "main": "webpack.config.js",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adelasznajder/plantapp.git"
@@ -36,4 +39,3 @@
   "homepage": "https://github.com/adelasznajder/plantapp#readme",
   "description": ""
 }
-
