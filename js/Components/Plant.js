@@ -5,7 +5,7 @@ const data = {
     brand: "Daewoo"
 };
 
-fetch(`${API}/cars/1`, {
+fetch(`${API}/species/1`, {
     method: "POST",
     body: JSON.stringify(data),
     headers: {

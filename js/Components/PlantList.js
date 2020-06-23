@@ -1,28 +1,38 @@
 import React, { useState, useEffect } from "react";
-
+import {GetDate} from "./Date";
 
 export const PlantList = () => {
     const [plants, setPlant] = useState([]);
+    const [date, setDate] = useState(new Date());
+
     const API = "http://localhost:3000";
 
     const getPlants = () => {
-        fetch(`${API}/species`)
+        fetch(`${API}/userplants`)
             .then(resp => resp.json())
             .then(data => setPlant(data))
             .catch(err => console.log(err));
     }
 
-    const handleWater = (id) => {
-        fetch(`${API}/species/${id}`, {
-            method: "DELETE"
+    const WaterPlant = (id) => {
+
+        const data = {
+            watered: true,
+            lastwatered: date
+        };
+        fetch(`${API}/userplants/${id}`, {
+            method: "PATCH",
+            body: JSON.stringify(data),
+            headers: {
+                "Content-Type": "application/json"
+            }
         })
             .then(resp => resp.json())
-            .then(data => {
-                const filteredPlants = plants.filter( plants => plants.id !== id );
-                setPlant(filteredPlants);
-            })
+            .then(data => console.log(data))
             .catch(err => console.log(err));
     }
+
+
 
     useEffect(() => {
         getPlants();
@@ -32,12 +42,13 @@ export const PlantList = () => {
     if (plants.length === 0) return <h1 className="plantlist-title">You've no plants!</h1>;
     return (
         <div className="plantlist-container">
-        <h1 className="plantlist-title">Your collection:</h1>
+            <GetDate date={date}/>
+        <h1 className="plantlist-title">Your plant collection:</h1>
         <ul>
             {plants.map(plant =>
                 <li key={plant.id}>
-                    {plant.species}
-                    <button onClick={ e=> handleWater(plant.id)}>Water!</button>
+                    {plant.name}.
+                    <button onClick={ e=> WaterPlant(plant.id)}>Water!</button>
                 </li>)}
         </ul>
         </div>

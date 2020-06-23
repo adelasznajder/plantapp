@@ -144,18 +144,29 @@
   "userplants": [
     {
       "id": 1,
-      "name": "Bob",
+      "name": "Bob the Blob",
       "species": "Philodendron Xanadu"
     },
     {
       "id": 2,
-      "name": "Ford",
+      "name": "Roblin the Goblin",
       "species": "Rhapis Excelsa"
     },
     {
       "id": 3,
       "name": "Kleo",
       "species": "Aglaonema Cleopatra"
+    },
+    {
+      "id": 4,
+      "name": "Snake Gyllenhaal",
+      "species": "Aglaonema Cleopatra"
+    },
+    {
+      "id": 5,
+      "name": "Aloe Vera Much",
+      "species": "Aloe Vera"
     }
+
   ]
 }

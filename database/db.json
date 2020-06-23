@@ -5,6 +5,7 @@
       "name": "Monstera Deliciosa",
       "water": "once a week",
       "toxicity": true,
+      "img": "https://images.unsplash.com/photo-1510505751526-76254482fd38?ixlib=rb-1.2.1&auto=format&fit=crop&w=702&q=80",
       "light": {
         "amount": "moderate",
         "window": "east or west"

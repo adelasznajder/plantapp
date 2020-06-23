@@ -144,23 +144,36 @@
   "userplants": [
     {
       "id": 1,
-      "name": "Bob",
-      "species": "Philodendron Xanadu"
+      "name": "Bob the Blob",
+      "species": "Philodendron Xanadu",
+      "watered": false
     },
     {
       "id": 2,
-      "name": "Ford",
-      "species": "Rhapis Excelsa"
+      "name": "Roblin the Goblin",
+      "species": "Rhapis Excelsa",
+      "watered": true,
+      "lastwatered": "2020-06-23T18:09:16.267Z"
     },
     {
       "id": 3,
       "name": "Kleo",
-      "species": "Aglaonema Cleopatra"
+      "species": "Aglaonema Cleopatra",
+      "watered": true,
+      "lastwatered": "2020-06-23T18:07:53.368Z"
     },
     {
       "id": 4,
-      "name": "Dan The Lion",
-      "species": "Aspidistra Elatior"
+      "name": "Snake Gyllenhaal",
+      "species": "Aglaonema Cleopatra",
+      "watered": true,
+      "lastwatered": "2020-06-23T18:07:53.368Z"
+    },
+    {
+      "id": 5,
+      "name": "Aloe Vera Much",
+      "species": "Aloe Vera",
+      "watered": false
     }
   ]
 }
