@@ -1,0 +1,50 @@
+{
+  "species": [
+    {
+      "id": 1 ,
+      "name": "" ,
+      "species": "Monstera Deliciosa",
+      "light": "moderate, indirect sun",
+      "water": "once a week",
+      "temperature": "10°C",
+      "toxicity": true
+    },
+    {
+      "id": 2 ,
+      "name": "" ,
+      "species": "Zamioculcas Zamiifolia",
+      "light": "moderate, indirect sun",
+      "water": "once a week",
+      "temperature": "16-26 °C",
+      "toxicity": true
+    },
+    {
+      "id": 3 ,
+      "name": "" ,
+      "species": "Pachira Aquatica",
+      "light": "lots of light",
+      "water": "every two weeks",
+      "temperature": "16-24 °C",
+      "toxicity": false
+    },
+    {
+      "id": 4 ,
+      "name": "" ,
+      "species": "Aglaonema Cleopatra",
+      "light": "moderate, indirect sunlight",
+      "water": "only when dry",
+      "temperature": "15-21 °C",
+      "toxicity": true
+    },
+    {
+      "id": 5 ,
+      "name": "" ,
+      "species": "Ficus Lyrata",
+      "light": "a lot, indirect sunlight",
+      "water": "only when dry",
+      "temperature": "16-27 °C",
+      "toxicity": true
+    }
+
+  ]
+}
