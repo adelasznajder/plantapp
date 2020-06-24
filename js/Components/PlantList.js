@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import {GetDate} from "./Date";
 
 export const PlantList = () => {
@@ -15,7 +15,6 @@ export const PlantList = () => {
     }
 
     const WaterPlant = (id) => {
-
         const data = {
             watered: true,
             lastwatered: date
@@ -33,7 +32,6 @@ export const PlantList = () => {
     }
 
 
-
     useEffect(() => {
         getPlants();
     }, []);
@@ -43,14 +41,14 @@ export const PlantList = () => {
     return (
         <div className="plantlist-container">
             <GetDate date={date}/>
-        <h1 className="plantlist-title">Your plant collection:</h1>
-        <ul>
-            {plants.map(plant =>
-                <li key={plant.id}>
-                    {plant.name}.
-                    <button onClick={ e=> WaterPlant(plant.id)}>Water!</button>
-                </li>)}
-        </ul>
+            <h1 className="plantlist-title">Your plant collection:</h1>
+            <ul>
+                {plants.map(plant =>
+                    <li key={plant.id}>
+                        {plant.name}.
+                        <button onClick={e => WaterPlant(plant.id)}>Water!</button>
+                    </li>)}
+            </ul>
         </div>
     )
 };
