@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Monstera Deliciosa",
-      "water": "once a week",
+      "water": 7,
       "toxicity": true,
       "light": {
         "amount": "moderate",
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "name": "Zamioculcas Zamiifolia",
-      "water": "once a week",
+      "water": 7,
       "toxicity": true,
       "light": {
         "amount": "moderate",
@@ -23,7 +23,7 @@
     {
       "id": 3,
       "name": "Ficus Lyrata",
-      "water": "once a week",
+      "water": 7,
       "toxicity": true,
       "light": {
         "amount": "moderate",
@@ -33,7 +33,7 @@
     {
       "id": 4,
       "name": "Pachira Aquatica",
-      "water": "once every two weeks",
+      "water": 14,
       "toxicity": false,
       "light": {
         "amount": "a lot",
@@ -43,7 +43,7 @@
     {
       "id": 5,
       "name": "Aglaonema Cleopatra",
-      "water": "once a week",
+      "water": 7,
       "toxicity": true,
       "light": {
         "amount": "moderate",
@@ -53,7 +53,7 @@
     {
       "id": 6,
       "name": "Aspidistra Elatior",
-      "water": "once every two weeks",
+      "water": 14,
       "toxicity": false,
       "light": {
         "amount": "small",
@@ -63,7 +63,7 @@
     {
       "id": 7,
       "name": "Aglaonema Key Lime",
-      "water": "once a week",
+      "water": 7,
       "toxicity": true,
       "light": {
         "amount": "moderate",
@@ -73,7 +73,7 @@
     {
       "id": 8,
       "name": "Epipremnum Aureum",
-      "water": "once a week",
+      "water": 7,
       "toxicity": true,
       "light": {
         "amount": "moderate",
@@ -83,7 +83,7 @@
     {
       "id": 9,
       "name": "Strelitzia Nicolai",
-      "water": "once every two weeks",
+      "water": 14,
       "toxicity": true,
       "light": {
         "amount": "a lot",
@@ -93,7 +93,7 @@
     {
       "id": 10,
       "name": "Chamaedorea Elegans",
-      "water": "once every two weeks",
+      "water": 14,
       "toxicity": false,
       "light": {
         "amount": "moderate",
@@ -103,7 +103,7 @@
     {
       "id": 11,
       "name": "Philodendron Xanadu",
-      "water": "once a week",
+      "water": 7,
       "toxicity": true,
       "light": {
         "amount": "moderate",
@@ -113,7 +113,7 @@
     {
       "id": 12,
       "name": "Rhapis Excelsa",
-      "water": "once a week",
+      "water": 7,
       "toxicity": false,
       "light": {
         "amount": "small",
@@ -123,7 +123,7 @@
     {
       "id": 13,
       "name": "Crassula ovata",
-      "water": "once a month",
+      "water": 28,
       "toxicity": true,
       "light": {
         "amount": "a lot",
@@ -133,12 +133,64 @@
     {
       "id": 14,
       "name": "Aloe Vera",
-      "water": "once a month",
+      "water": 28,
       "toxicity": false,
       "light": {
         "amount": "a lot",
         "window": "south"
       }
+    },
+    {
+      "id": 15,
+      "name": "ASD",
+      "water": "",
+      "toxicity": false,
+      "light": {
+        "amount": "",
+        "window": ""
+      }
+    },
+    {
+      "id": 16,
+      "name": "ssdsa",
+      "water": "14",
+      "toxicity": "true",
+      "light": "moderate",
+      "window": "dsasd"
+    },
+    {
+      "id": 17,
+      "name": "aloe vera",
+      "water": "28",
+      "toxicity": false,
+      "light": {
+        "amount": "",
+        "window": ""
+      },
+      "light.amount": "a lot",
+      "light.window": "d"
+    },
+    {
+      "id": 18,
+      "name": "sdas",
+      "water": "14",
+      "toxicity": false,
+      "light": {
+        "amount": "",
+        "window": ""
+      },
+      "light.amount": "moderate"
+    },
+    {
+      "id": 19,
+      "name": "dsdfd",
+      "water": "14",
+      "toxicity": false,
+      "light": {
+        "amount": "",
+        "window": ""
+      },
+      "light.amount": "moderate"
     }
   ],
   "userplants": [
@@ -146,7 +198,8 @@
       "id": 1,
       "name": "Bob the Blob",
       "species": "Philodendron Xanadu",
-      "watered": false
+      "watered": true,
+      "lastwatered": "2020-06-26T15:06:36.242Z"
     },
     {
       "id": 2,

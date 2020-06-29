@@ -64,10 +64,14 @@ export const AddUserPlant = () => {
             <textarea value={name} placeholder={`What's your plant's name?`} onChange={e => setName(e.target.value)}/>
         </label>
         <label>Species:
-            <select value={species} onChange={handleToxicChange}>
-
+            <select value={species}>
+                {plants.map(plant =>
+                    <option value={plant.name}>
+                        {plant.name}
+                    </option>)}
             </select>
         </label>
         <input type="submit" value="Wyślij" onClick={handleSubmit}/>
     </form>)
+}
 
