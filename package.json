@@ -11,10 +11,12 @@
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.1.0",
-    "sass": "^1.26.8",
+    "gulp-sourcemaps": "^2.6.5",
+    "sass": "^1.26.9",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
@@ -24,6 +26,7 @@
   ],
   "main": "webpack.config.js",
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
