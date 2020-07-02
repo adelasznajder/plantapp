@@ -48,16 +48,14 @@ export const PlantList = () => {
             <div className="plantlist-container">
                 <GetDate date={date}/>
                 <h1 className="plantlist-title">Your plant collection:</h1>
-                <ol>
+                <ul className="list-group">
                     {plants.map(plant =>
-                        <li key={plant.id}>
-                            {plant.name}.
-                            <button onClick={e => WaterPlants(plant.id)}>Water!</button>
-                        </li>)}
-                </ol>
-                {prevUrl && <a href="#" onClick={e => handleChangePage(e, prevUrl)}>Prev</a>}
-                |
-                {nextUrl && <a href="#" onClick={e => handleChangePage(e, nextUrl)}>Next</a>}
+                        <li className="list-group-item" key={plant.id}>
+                            {plant.name}
+                            <button type="button" className="btn btn-info" onClick={e => WaterPlants(plant.id)}>Water!</button>
+                        </li>
+                    )}
+                </ul>
             </div>
         )
     }
