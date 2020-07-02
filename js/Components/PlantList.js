@@ -5,8 +5,6 @@ import {CheckIfWatered} from "./CheckIfWatered";
 export const PlantList = () => {
         const [plants, setPlant] = useState([]);
         const [date, setDate] = useState(new Date());
-        const [nextUrl, setNextUrl] = useState(null);
-        const [prevUrl, setPrevUrl] = useState(null);
 
         const API = "http://localhost:3000";
 
@@ -15,8 +13,6 @@ export const PlantList = () => {
                 .then(resp => resp.json())
                 .then(data => {
                     setPlant(data);
-                    setNextUrl(data.next);
-                    setPrevUrl(data.previous);
                 })
                 .catch(err => console.log(err));
         }

@@ -3,8 +3,7 @@ export class DataPlantModel {
     name = '';
     water = '';
     toxicity = false;
-    light = {
-        amount: '',
-        window: ''
-    }
+    light = '';
+    window='';
+
 }

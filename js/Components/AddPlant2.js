@@ -8,7 +8,6 @@ const DataService = new DataPlantApiService();
 
 export const Register = () => {
     const [plant, setPlant] = useState(new DataPlantModel());
-    /*  const [errors, setErrors] = useState([]);*/
 
 
     const handleChangePlantData = e => {
@@ -59,7 +58,7 @@ export const Register = () => {
                 <div className="form-row">
                     <div className="form-group col-md-6">
                         <label>How much light does it need?</label>
-                        <select className="custom-select" name={"light.amount"} value={plant.light.amount}
+                        <select className="custom-select" name={"light.amount"} value={plant.light}
                                 onChange={handleChangePlantData}>
                             <option value={"small"}>It can handle the shadows</option>
                             <option value={"moderate"}>Likes light, but not direct sunlight</option>
@@ -68,7 +67,7 @@ export const Register = () => {
                     </div>
                     <div className="form-group col-md-6">
                         <label>Which windows serve it best? North, east, west, south? </label>
-                        <input className="form-control" name={"light.window"} type={"text"} value={plant.light.window}
+                        <input className="form-control" name={"light.window"} type={"text"} value={plant.window}
                                onChange={handleChangePlantData}/>
                     </div>
                 </div>

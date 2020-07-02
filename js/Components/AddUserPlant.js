@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {handleChange} from "./UseInput";
 
-export const AddUserPlant = () => {
+
+export const AddUser = () => {
     const API = ' http://localhost:3000';
     const [plants, setPlants] = useState([]);
     const [name, setName] = useState("");
@@ -59,19 +59,22 @@ export const AddUserPlant = () => {
 
     if (plants.length === 0) return null;
     return (<form>
-        <h2>Add a plant to your garden!</h2>
-        <label>Name:
+        <div className="jumbotron jumbotron-fluid">
+            <div className="container push-spaces">
+                <h1 className="display-4">Add a new plant to your garden!</h1>
+                <p className="lead">Please fill in the form below. Thank you!</p>
+            </div>
+        </div>
+        <label>How do you call your plant?: </label>
             <textarea value={name} placeholder={`What's your plant's name?`} onChange={e => setName(e.target.value)}/>
-        </label>
-        <label>Species:
+        <label>Species: </label>
             <select value={species}>
                 {plants.map(plant =>
                     <option value={plant.name}>
                         {plant.name}
                     </option>)}
             </select>
-        </label>
-        <input type="submit" value="Wyślij" onClick={handleSubmit}/>
+        <button className="btn btn-primary" type="submit"> Submit!</button>
     </form>)
 }
 

@@ -1,10 +1,12 @@
+import React from 'react';
+
 export class UserPlantApiService {
-    API_URL = "http://localhost:3000";
+    API = "http://localhost:3000";
 
     addUserPlant = (plantToAdd, successCallback, errorCallback) => {
-        fetch(`${this.API_URL}/userplants`, {
+        fetch(`${this.API}/userplants`, {
             method: "POST",
-            body: JSON.stringify(user),
+            body: JSON.stringify(plantToAdd),
             headers: {
                 "Content-Type": "application/json"
             }
@@ -15,7 +17,7 @@ export class UserPlantApiService {
     }
 
     getUserPlantId = (id, successCallback, errorCallback) => {
-        fetch(`${this.API_URL}/userplants/${id}`, {
+        fetch(`${this.API}/userplants/${id}`, {
             method: "GET"
         })
             .then(resp => resp.json())
@@ -24,7 +26,7 @@ export class UserPlantApiService {
     }
 
     getAll = (successCallback, errorCallback) => {
-        fetch(`${this.API_URL}/userplants`, {
+        fetch(`${this.API}/userplants`, {
             method: "GET",
         })
             .then(resp => resp.json())

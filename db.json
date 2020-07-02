@@ -5,40 +5,35 @@
       "name": "Monstera Deliciosa",
       "water": 7,
       "toxicity": true,
-      "light": {
-        "amount": "moderate",
-        "window": "east or west"
-      }
+      "light": "moderate",
+      "window": "east or west"
+
     },
     {
       "id": 2,
       "name": "Zamioculcas Zamiifolia",
       "water": 7,
       "toxicity": true,
-      "light": {
-        "amount": "moderate",
-        "window": "east or west"
-      }
+      "light": "moderate",
+      "window": "east or west"
     },
     {
       "id": 3,
       "name": "Ficus Lyrata",
       "water": 7,
       "toxicity": true,
-      "light": {
-        "amount": "moderate",
-        "window": "east, west or south"
-      }
+      "light": "moderate",
+      "window": "east, west or south"
+
     },
     {
       "id": 4,
       "name": "Pachira Aquatica",
       "water": 14,
       "toxicity": false,
-      "light": {
-        "amount": "a lot",
-        "window": "east or south"
-      }
+      "light": "a lot",
+      "window": "east or south"
+
     },
     {
       "id": 5,
@@ -55,142 +50,80 @@
       "name": "Aspidistra Elatior",
       "water": 14,
       "toxicity": false,
-      "light": {
-        "amount": "small",
-        "window": "east, west or north"
-      }
+      "light": "small",
+      "window": "east, west or north"
+
     },
     {
       "id": 7,
       "name": "Aglaonema Key Lime",
       "water": 7,
       "toxicity": true,
-      "light": {
-        "amount": "moderate",
-        "window": "east, west or north"
-      }
+      "light": "moderate",
+      "window": "east, west or north"
+
     },
     {
       "id": 8,
       "name": "Epipremnum Aureum",
       "water": 7,
       "toxicity": true,
-      "light": {
-        "amount": "moderate",
-        "window": "east, west or north"
-      }
+      "light": "moderate",
+      "window": "east, west or north"
+
     },
     {
       "id": 9,
       "name": "Strelitzia Nicolai",
       "water": 14,
       "toxicity": true,
-      "light": {
-        "amount": "a lot",
-        "window": "south"
-      }
+      "light": "a lot",
+      "window": "south"
+
     },
     {
       "id": 10,
       "name": "Chamaedorea Elegans",
       "water": 14,
       "toxicity": false,
-      "light": {
-        "amount": "moderate",
-        "window": "west"
-      }
+      "light": "moderate",
+      "window": "west"
     },
     {
       "id": 11,
       "name": "Philodendron Xanadu",
       "water": 7,
       "toxicity": true,
-      "light": {
-        "amount": "moderate",
-        "window": "west or east"
-      }
+      "light":  "moderate",
+      "window": "west or east"
+
     },
     {
       "id": 12,
       "name": "Rhapis Excelsa",
       "water": 7,
       "toxicity": false,
-      "light": {
-        "amount": "small",
-        "window": "west or east"
-      }
+      "light": "small",
+      "window": "west or east"
+
     },
     {
       "id": 13,
       "name": "Crassula ovata",
       "water": 28,
       "toxicity": true,
-      "light": {
-        "amount": "a lot",
-        "window": "south"
-      }
+      "light": "a lot",
+      "window": "south"
+
     },
     {
       "id": 14,
       "name": "Aloe Vera",
       "water": 28,
       "toxicity": false,
-      "light": {
-        "amount": "a lot",
-        "window": "south"
-      }
-    },
-    {
-      "id": 15,
-      "name": "ASD",
-      "water": "",
-      "toxicity": false,
-      "light": {
-        "amount": "",
-        "window": ""
-      }
-    },
-    {
-      "id": 16,
-      "name": "ssdsa",
-      "water": "14",
-      "toxicity": "true",
-      "light": "moderate",
-      "window": "dsasd"
-    },
-    {
-      "id": 17,
-      "name": "aloe vera",
-      "water": "28",
-      "toxicity": false,
-      "light": {
-        "amount": "",
-        "window": ""
-      },
-      "light.amount": "a lot",
-      "light.window": "d"
-    },
-    {
-      "id": 18,
-      "name": "sdas",
-      "water": "14",
-      "toxicity": false,
-      "light": {
-        "amount": "",
-        "window": ""
-      },
-      "light.amount": "moderate"
-    },
-    {
-      "id": 19,
-      "name": "dsdfd",
-      "water": "14",
-      "toxicity": false,
-      "light": {
-        "amount": "",
-        "window": ""
-      },
-      "light.amount": "moderate"
+      "light": "a lot",
+      "window": "south"
+
     }
   ],
   "userplants": [
@@ -226,6 +159,18 @@
       "id": 5,
       "name": "Aloe Vera Much",
       "species": "Aloe Vera",
+      "watered": false
+    },
+    {
+      "id": 6,
+      "name": "Czekolada",
+      "species": "",
+      "watered": false
+    },
+    {
+      "id": 7,
+      "name": "Czekolada",
+      "species": "",
       "watered": false
     }
   ]

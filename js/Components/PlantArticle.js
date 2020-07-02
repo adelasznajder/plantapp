@@ -18,27 +18,28 @@ export const PlantArticle = ({id}) => {
     }, []);
 
 
-    if (item === "") return <h1 className="plantlist-title">Plant could not be found :(</h1>;
+    if (item === "") return (
+        <div className="alert alert-dismissible alert-secondary">
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
+            <strong>We're sorry!</strong> It looks like you don't have any plants yet!
+        </div>);
     return (
         <>
-            <div className="article-header">
-                <h1>{item.name}</h1>
-                <h2>User-Name</h2>
-            </div>
-            <div className="article-info">
-                <p className="article-text">Article text</p>
-                <ul>
-                    <li>Water: {item.water}</li>
-                    <li>Light: {item.light.amount}</li>
-                    <li>Window: {item.light.window}</li>
-                    <li>Is it toxic? {item.toxicity}</li>
-                </ul>
-                <div className="img-container">
-                    <img alt="monstera deliciosa"
-                        src="https://images.unsplash.com/photo-1545165375-1b744b9ed444?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"/>
+            <div className="card border-secondary mb-3">
+                <div className="card-header">{item.name}</div>
+                <div className="card-body">
+                    <img src="https://i.picsum.photos/id/530/500/300.jpg?hmac=j--jJHATejOgK-I27Ud6d8nsWMTOfLETVR3wh8ZuM40" alt="Card image"/>
+                    <h4 className="card-title">User plant name</h4>
+                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <ul>
+                        <li>Water: {item.water}</li>
+                        <li>Light: {item.light}</li>
+                        <li>Window: {item.window}</li>
+                        <li>Is it toxic? {item.toxicity}</li>
+                    </ul>
                 </div>
             </div>
-
         </>
     )
 }

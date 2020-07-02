@@ -16,7 +16,7 @@ export class DataPlantApiService {
             .catch(err => errorCallback(err));
     };
 
-    getUserPlantId = (id, successCallback, errorCallback) => {
+    getPlantId = (id, successCallback, errorCallback) => {
         fetch(`${this.API}/species/${id}`, {
             method: "GET"
         })
