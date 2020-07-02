@@ -1,21 +1,32 @@
 import React, {useState, useEffect} from "react";
 import {GetDate} from "./Date";
-import {CheckIfWatered} from "./CheckIfWatered";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useRouteMatch,
+    useParams
+} from "react-router-dom";
+import {CheckIfWatered} from "./Hooks/CheckIfWatered";
+import {UserPlantApiService} from "../services/UserPlantService";
+
+const UserPlantApi = new UserPlantApiService();
 
 export const PlantList = () => {
         const [plants, setPlant] = useState([]);
         const [date, setDate] = useState(new Date());
 
-        const API = "http://localhost:3000";
+
+        const API = 'http://localhost:3000';
 
         const getPlants = () => {
-            fetch(`${API}/userplants`)
-                .then(resp => resp.json())
-                .then(data => {
-                    setPlant(data);
-                })
-                .catch(err => console.log(err));
-        }
+            UserPlantApi.getAll(
+                data => setPlant(data),
+                err => console.log(err)
+            )
+        };
+
         const WaterPlants = (id) => {
             const data = {
                 watered: true,
@@ -33,6 +44,12 @@ export const PlantList = () => {
                 .catch(err => console.log(err));
         };
 
+        const removePlant = (id) => {
+            UserPlantApi.removeUserPlant(id,
+                data => setPlant(data)),
+                err => console.log(err)
+        }
+
 
         useEffect(() => {
             getPlants();
@@ -41,17 +58,21 @@ export const PlantList = () => {
 
         if (plants.length === 0) return <h1 className="plantlist-title">You've no plants!</h1>;
         return (
-            <div className="plantlist-container">
+
+
+            <div className="container">
                 <GetDate date={date}/>
-                <h1 className="plantlist-title">Your plant collection:</h1>
+                <h1>Your plant collection:</h1>
                 <ul className="list-group">
                     {plants.map(plant =>
                         <li className="list-group-item" key={plant.id}>
-                            {plant.name}
-                            <button type="button" className="btn btn-info" onClick={e => WaterPlants(plant.id)}>Water!</button>
+                            {plant.name}: it was last watered {plant.lastwatered}.
+                            <button type="button" className="btn btn-info" onClick={e => WaterPlants(plant.id)}>Water!
+                            </button>
                         </li>
                     )}
                 </ul>
+                <button type="button" className="btn btn-primary">Add a plant</button>
             </div>
         )
     }

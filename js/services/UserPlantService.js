@@ -23,7 +23,25 @@ export class UserPlantApiService {
             .then(resp => resp.json())
             .then(data => successCallback(data))
             .catch(err => errorCallback(err));
-    }
+    };
+
+    patchUserPlant = (id, successCallback, errorCallback) => {
+        fetch(`${this.API}/userplants/${id}`, {
+            method: "PATCH"
+        })
+            .then(resp=>resp.json())
+            .then(data=>successCallback(data))
+            .catch(err=>errorCallback(err));
+    };
+
+    removeUserPlant = (id, successCallback, errorCallback) => {
+        fetch(`${this.API}/userplants/${id}`, {
+            method: "DELETE"
+        })
+            .then(resp=>resp.json())
+            .then(data=>successCallback(data))
+            .catch(err=>errorCallback(err));
+    };
 
     getAll = (successCallback, errorCallback) => {
         fetch(`${this.API}/userplants`, {

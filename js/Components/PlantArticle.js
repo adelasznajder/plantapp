@@ -28,7 +28,7 @@ export const PlantArticle = ({id}) => {
             <div className="card border-secondary mb-3">
                 <div className="card-header">{item.name}</div>
                 <div className="card-body">
-                    <img src="https://i.picsum.photos/id/530/500/300.jpg?hmac=j--jJHATejOgK-I27Ud6d8nsWMTOfLETVR3wh8ZuM40" alt="Card image"/>
+                    <img className="img-fluid" src="https://i.picsum.photos/id/530/500/300.jpg?hmac=j--jJHATejOgK-I27Ud6d8nsWMTOfLETVR3wh8ZuM40" alt="Card image"/>
                     <h4 className="card-title">User plant name</h4>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of
                         the card's content.</p>

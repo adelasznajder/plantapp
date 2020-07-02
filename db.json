@@ -7,7 +7,6 @@
       "toxicity": true,
       "light": "moderate",
       "window": "east or west"
-
     },
     {
       "id": 2,
@@ -24,7 +23,6 @@
       "toxicity": true,
       "light": "moderate",
       "window": "east, west or south"
-
     },
     {
       "id": 4,
@@ -33,7 +31,6 @@
       "toxicity": false,
       "light": "a lot",
       "window": "east or south"
-
     },
     {
       "id": 5,
@@ -52,7 +49,6 @@
       "toxicity": false,
       "light": "small",
       "window": "east, west or north"
-
     },
     {
       "id": 7,
@@ -61,7 +57,6 @@
       "toxicity": true,
       "light": "moderate",
       "window": "east, west or north"
-
     },
     {
       "id": 8,
@@ -70,7 +65,6 @@
       "toxicity": true,
       "light": "moderate",
       "window": "east, west or north"
-
     },
     {
       "id": 9,
@@ -79,7 +73,6 @@
       "toxicity": true,
       "light": "a lot",
       "window": "south"
-
     },
     {
       "id": 10,
@@ -94,9 +87,8 @@
       "name": "Philodendron Xanadu",
       "water": 7,
       "toxicity": true,
-      "light":  "moderate",
+      "light": "moderate",
       "window": "west or east"
-
     },
     {
       "id": 12,
@@ -105,7 +97,6 @@
       "toxicity": false,
       "light": "small",
       "window": "west or east"
-
     },
     {
       "id": 13,
@@ -114,7 +105,6 @@
       "toxicity": true,
       "light": "a lot",
       "window": "south"
-
     },
     {
       "id": 14,
@@ -123,7 +113,6 @@
       "toxicity": false,
       "light": "a lot",
       "window": "south"
-
     }
   ],
   "userplants": [
@@ -132,7 +121,7 @@
       "name": "Bob the Blob",
       "species": "Philodendron Xanadu",
       "watered": true,
-      "lastwatered": "2020-06-26T15:06:36.242Z"
+      "lastwatered": "2020-07-02T18:19:17.985Z"
     },
     {
       "id": 2,
@@ -159,7 +148,8 @@
       "id": 5,
       "name": "Aloe Vera Much",
       "species": "Aloe Vera",
-      "watered": false
+      "watered": true,
+      "lastwatered": "2020-07-02T18:19:17.985Z"
     },
     {
       "id": 6,
